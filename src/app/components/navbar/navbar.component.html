@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-custom" style="background-color: #964245;">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="inicio" routerLinkActive="active">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="fiestas" routerLinkActive="active" (click)="cambiarEstacion(''); cambiarPopularidad(0)">Fiestas</a>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filtrar
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" (click)="cambiarEstacion('Primavera'); cambiarPopularidad(0)">Primavera</a></li>
+              <li><a class="dropdown-item" (click)="cambiarEstacion('Verano'); cambiarPopularidad(0)">Verano</a></li>
+              <li><a class="dropdown-item" (click)="cambiarEstacion('Otoño'); cambiarPopularidad(0)">Otoño</a></li>
+              <li><a class="dropdown-item" (click)="cambiarEstacion('Invierno'); cambiarPopularidad(0)">Invierno</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" (click)="cambiarPopularidad(1); cambiarEstacion('')">Populares</a></li>
+              <li><a class="dropdown-item" (click)="cambiarPopularidad(2); cambiarEstacion('')">Desconocidas</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>

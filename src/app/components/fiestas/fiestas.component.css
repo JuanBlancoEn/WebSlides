@@ -1,0 +1,120 @@
+.card-img-top{
+    max-width: 600px;
+    height: auto;
+    /* max-height: 200px; */
+    /* object-fit: cover; */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.card{
+    max-width: 80%;
+    /* background: linear-gradient(0.25turn, grey, #ebf8e1, grey); */
+    background: linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.8), /* Negro con 80% de opacidad */
+      rgba(128, 0, 0, 0.8) 50%, /* Rojo oscuro con 80% de opacidad al 50% */
+      rgba(0, 0, 0, 0.8) /* Negro con 80% de opacidad al final */
+);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-title, .card-text{
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.card-title {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  /* font-family: 'Montserrat', sans-serif; */
+  
+  /* font-family: "Libre Bodoni", serif; */
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+/* body .page-container {
+    background-color: #FFD700 !important; 
+} */
+
+.footer{
+    /* background: linear-gradient(#000000, #800000, #000000); */
+    background-color: #964245 !important;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer{
+    width: 100%;
+}
+
+.container-fluid, .card, .footer {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+  }
+
+  .row, .col{
+    padding: 0;
+    margin: 0;
+  }
+
+.container-fluid{
+    background-image: url('C:/Users/jengenio/Angular/Presentacion/src/assets/FondoFlamenco.png');
+    
+    /* background-image: url('C:/Users/jengenio/Angular/Presentacion/src/assets/Abstract2.png'), url('C:/Users/jengenio/Angular/Presentacion/src/assets/Abstract3.png'); */
+    /* background-image: url('C:/Users/jengenio/Angular/Presentacion/src/assets/FondoRojo.avif'); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* background-image: url('C:/Users/jengenio/Angular/Presentacion/src/assets/redBackground.jpg'); */
+    /* #4B6969 gris verdoso */
+    /* background-color: #800000; */
+    /* background: linear-gradient(#000000, #4B6969, #000000); */
+}
+
+.custom-shadow-top{
+    box-shadow: 0px -5px 10px rgba(255, 255, 255, 0.25); /* Aquí puedes ajustar el color y la opacidad */
+  }
+
+.custom-shadow-bottom{
+    box-shadow: 0px 10px 10px rgba(255, 255, 255, 0.25); /* Aquí puedes ajustar el color y la opacidad */
+  }
+.custom-shadow{
+    box-shadow: 4px -5px 10px rgba(255, 255, 255, 0.25); /* Aquí puedes ajustar el color y la opacidad */
+    box-shadow: 4px 10px 10px rgba(255, 255, 255, 0.25); /* Aquí puedes ajustar el color y la opacidad */
+  }
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levantamiento al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(72, 83, 84, 0.8); /* Sombra más pronunciada en el hover */
+  }
+
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
+
+.background{
+  background-image: url('C:/Users/jengenio/Angular/Presentacion/src/assets/FondoFlamenco.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.background-container {
+  min-height: 100vh; /* Establece una altura mínima del 100% de la altura de la ventana */
+}

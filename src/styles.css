@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.dropdown-item:hover {
+    cursor: pointer;
+  }
+
+.dropdown-item:active {
+    background-color: #964245;
+    /* background-color: rgba(150, 68, 69, 0.8); */
+    color: #fff; /* Cambia este color al que desees */
+  }

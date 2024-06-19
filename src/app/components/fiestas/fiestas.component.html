@@ -1,0 +1,21 @@
+<div class="background-container background">
+
+  <div class="container-fluid">
+
+    <div class="card-container d-flex justify-content-center flex-wrap row-cols-1">
+    
+      <div class="card h-100 mt-4 custom-shadow animate__animated animate__fadeInDown" *ngFor="let fiesta of fiestasFiltradas">
+        <div class="d-flex justify-content-center">
+          <img src={{fiesta.imagen}} class="card-img-top img-fluid mt-1" alt="...">
+        </div>
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title text-center animate__animated animate__fadeInLeft"> {{fiesta.name}} </h5>
+          <p class="card-text text-center animate__animated animate__fadeInRight">{{fiesta.descripcion}} </p>
+        </div>
+      </div>
+      
+    </div>
+    
+    </div>
+    
+</div>
